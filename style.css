@@ -1,0 +1,326 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    body{
+    background-color: #161a1d;
+    }
+    
+    .navigation{
+        background-color:#161a1d;
+        color: #ba181b;
+        height: 50px;
+    
+        animation-name: navegacao;
+        animation-duration: 4s;
+    
+    }
+    
+    .navigation ul{
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    
+    }
+    
+    .navigation li{
+    display:inline-block ;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #a4161a;
+    }
+    
+    .navigation a {
+    color:#ba181b;
+    text-decoration: none;
+    }
+    
+    .navigation a:hover {
+    color:#d3d3d3;
+    
+    }
+    .navigation li.threeline-icon {
+    display: none;
+    }
+    
+    .capa{
+        color: white;
+    }
+    
+    .capa span {
+    color: #ba181b;
+    display: block;
+    }
+    
+    .capa div{
+    display: inline-block;
+    height: 650px;
+    }
+    
+    .profile-pic {
+    width:  40%;
+    text-align: center;
+    }
+    
+    .profile-pic img{
+    width: 320px;
+    border-radius: 320px;
+    margin-top: 100px;
+    
+    }
+    
+    .profile-title{
+    vertical-align: top;
+    width: 60%;
+    animation-name: profile-capa;
+    animation-duration: 3s;
+    
+    }
+    .profile-title h1 {
+        text-transform: uppercase;
+    font-size: 58px;
+    margin-top: 200px;
+    font-weight: 400px;
+    line-height: 54px;
+    
+    }
+    
+    .profile-title h2{
+    font-size: 18px;
+    font-weight: 95;
+    margin-top: -26px;
+    }
+    
+    .links a {
+    font-size: 24px;
+    
+    }
+    .links {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    
+    }
+    
+    .link{
+    flex:1; 
+    
+    }
+    .main {
+    padding: 40px 180px 80px 100px;
+    font-size: 16px;
+    
+    animation-name: conteudo;
+    animation-duration: 2s;
+    
+    }
+    
+    .caminho {
+    line-height: 30px;
+    
+    }
+    .main h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align:center;
+    }
+    
+    .main h2 {
+    color:white;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    }
+    
+    .main h3 {
+    color: #ba181b;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    
+    .main h4{
+    
+    font-size: 50px;
+    text-align: center;
+    
+    
+    }
+    
+    .main p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    text-align: justify;
+    }
+    
+    .main a:hover {
+    color: #d3d3d3;
+    }
+    
+    .main a {
+    color: #ba181b;
+    text-decoration: none;
+    
+    }
+    
+    .caminho {
+    list-style: none;
+    padding-left: 0;
+    
+    }
+    .caminho li{
+        display: inline-block;
+        font-weight: 100;
+    font-size: 18px;
+    color:#ba181b;
+    }
+    .contato h1{
+    font-size: 20px;
+    text-align: left;
+    color:white ;
+    }
+    
+    .contato h3{
+        color:#ba181b; ;
+    }
+    .social-img {
+    width: 50px;
+    display:inline-block;
+    margin-right: 10px;
+    text-align: center;
+    }
+    
+    .contato a {
+    text-decoration: none;
+    color: #ba181b;;
+    }
+    
+    
+    .contato a:hover {
+    color:#d3d3d3;
+    }
+    
+    @keyframes profile-capa {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+    }
+    
+    @keyframes conteudo {
+    0% {opacity: 0; transform: translate(-20px,0px)}
+    100% {opacity: 1;transform: translate(0px,0px)}
+    
+    }
+    
+    
+    @media (max-width: 1000px) {
+    
+    .navigation li {
+        display: none;
+    }
+    
+    .navigation li.threeline-icon {
+        display: inline-block;
+    
+    }
+    
+    .navigation li.threeline-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .capa div {
+    display: block;
+    height: auto;
+    
+    }
+    
+    .profile-pic {
+    background-color: #161a1d;
+    width: 100%;
+    }
+    
+    .profile-pic img {
+    margin-top: 0;
+    max-width: 80%;
+    }
+    
+    .profile-title {
+    text-align: center;
+    background-color: #161a1d;
+    width: 100%;
+    }
+    
+    .profile-title h1{
+     margin-top: 30px;
+     font-size: 34px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    
+    .profile-title h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    
+    .main {
+    padding: 10px 5% 40px 5%;
+    font-size: 14px;
+    text-align: left;
+    line-height: 30px;
+        }
+    
+    .main p {
+    text-align: left;
+    line-height: 30px;
+    }
+    
+    .caminho li{
+        font-size: 14px;
+    }
+    
+    .caminho h1{
+        font-size: 14px;
+    }
+    
+    .main h4{
+        font-size: 20px;
+    }
+    
+    .menujs {
+    height: auto;
+    
+    }
+    
+    .menujs ul {
+    height: auto;
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+    }
+    
+    .menujs li {
+    display: block;
+    border-bottom: solid grey 0.5px;
+    width: 100%;
+    padding: 0%;
+    }
+    
+    
+    
+    
+    
+    }
